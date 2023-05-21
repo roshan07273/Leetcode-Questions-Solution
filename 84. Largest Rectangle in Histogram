@@ -1,5 +1,5 @@
 class Solution {
-public:
+private:
     
     vector<int>previous_smaller(vector<int>& heights){
         
