@@ -20,3 +20,21 @@ public:
         return dp[m][n];
     }
 };
+
+//happy number gfg 11sept 2023 potd
+class Solution{
+public:
+    bool isLucky(int n) {
+        int x = 2;
+        
+        while(x <= n){
+            if(n % x == 0)
+                return 0;
+                
+            n -= n / x;
+            ++x;
+        }
+        
+        return 1;
+    }
+};
